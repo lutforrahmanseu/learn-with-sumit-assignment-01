@@ -173,8 +173,8 @@ export default function DreamArea() {
   ];
 
   return (
-    <section>
-      <div className="container">
+    <section id="pricing">
+      <div className="container" >
         <DreamTitle />
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

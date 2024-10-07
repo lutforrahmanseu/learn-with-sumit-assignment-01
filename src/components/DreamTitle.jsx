@@ -2,7 +2,7 @@ import React from "react";
 
 export default function DreamTitle() {
   return (
-    <div className="mx-auto mb-12 max-w-[485px] text-center lg:mb-[70px]">
+    <div  className="mx-auto mb-12 max-w-[485px] text-center lg:mb-[70px]">
       <span className="mb-2 block text-lg font-semibold text-primary">
         Properties
       </span>
