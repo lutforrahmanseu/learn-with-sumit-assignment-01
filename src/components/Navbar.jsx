@@ -2,10 +2,16 @@ import React from "react";
 import Logo from "./Logo";
 import MenuLink from "./MenuLink";
 import logo from "../assets/images/logo/logo.svg";
-export default function Navbar() {
+
+export default function Navbar({ scrolling }) {
   return (
     <div>
-      <div className="bg-primary absolute left-0 top-0 z-40 flex w-full items-center bg-transparent">
+      <div
+        className={`fixed left-0 top-0 z-40 w-full flex items-center ${
+          scrolling ? "bg-orange-700 shadow-md" : "bg-transparent"
+        }`}
+        style={{ transition: 'background-color 0.3s ease' }}
+      >
         <div className="container">
           <div className="relative -mx-4 flex items-center justify-between">
             <div className="flex w-full items-center justify-between px-4 py-3">
@@ -13,9 +19,7 @@ export default function Navbar() {
                 logo={logo}
                 className="header-logo navbar-logo block w-60 max-w-full px-4 h-12"
               />
-
               <MenuLink />
-
               <div className="sm:flex">
                 <a
                   href="signin.html"
